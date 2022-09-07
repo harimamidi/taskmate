@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    <title>Welcome to Taskmate!</title>
+{% endblock title %}
+
+{% block content %}
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-4">
+                <img src="{% static 'images/notes.jpg' %}" class="rounded-lg shadow-sm" alt="notes" width="350" height="300" />
+            </div>
+            <div class="col-lg-4">
+                <img src="{% static 'images/notes.jpg' %}" class="rounded-lg shadow-sm" alt="notes" width="350" height="300"/>
+            </div>
+            <div class="col-lg-4">
+                <img src="{% static 'images/notes.jpg' %}" class="rounded-lg shadow-sm" alt="notes" width="350" height="300"/>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-10 offset-md-1">
+                    <center><p class="h1 text-primary">You will face many defeats in life, but never let yourself be defeated</p></center>
+                    <center><p class="h2 mt-3">The greatest glory in living lies not in never falling, </p></center>
+                    <center><p class="h5">Never let the fear of striking out keep you from playing the game</p></center>
+
+                    <center><a href="{% url 'todolist' %}"><button type="button" class="btn btn-primary btn-lg mt-3 rounded-lg shadow-sm">Lets get Started</button></a></center>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
